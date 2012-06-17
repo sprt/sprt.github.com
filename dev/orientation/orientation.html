@@ -48,7 +48,7 @@ div {
 
 <script>
 var span = document.getElementsByTagName("span")[0];
-window.addEventListener("deviceorientation", function(e) {
+addEventListener("deviceorientation", function(e) {
 	span.innerText = Math.round(e.beta);
 }, false);
 </script>
