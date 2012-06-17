@@ -1,0 +1,62 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>wat</title>
+
+<style>
+@-webkit-keyframes lol {
+	from, to {
+		background: #fff;
+		color: #000;
+		text-shadow: -5px 0 0 #ff3232, 5px 0 0 #00dcdc;
+	}
+	50% {
+		background: #000;
+		color: #fff;
+		text-shadow: -5px 0 0 #00dcdc, 5px 0 0 #ff3232;
+	}
+}
+
+html {
+	height: 100%;
+	
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -o-box;
+	display: box;
+	
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-box-pack: center;
+	-o-box-pack: center;
+	box-pack: center;
+	
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-box-align: center;
+	-o-box-align: center;
+	box-align: center;
+	
+	-webkit-animation: lol 150ms step-start infinite;
+	-moz-animation: lol 1s step-start infinite;
+	-ms-animation: lol 1s step-start infinite;
+	-o-animation: lol 1s step-start infinite;
+	animation: lol 1s step-start infinite;
+}
+
+p {
+	font: bold 12em "Liberation Sans", sans-serif;
+	line-height: 100%;
+	margin: 0;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+}
+</style>
+
+<p>wat</p>
+
+<script>
+var wat = decodeURIComponent(location.search.substr(1));
+document.getElementsByTagName("p")[0].textContent = wat;
+document.title = wat;
+</script>
